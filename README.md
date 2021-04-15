@@ -1,70 +1,102 @@
-# Getting Started with Create React App
+<p align="center">
+  <h1 style="
+    color:#764abc;
+    font-weight:bold"
+  >
+    Redux Store
+  </h1>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sobre o projeto
+  Redux Store é um projeto de carrinho desenvolvido para testar as funcionalidades do [Redux](https://redux.js.org).
 
-## Available Scripts
+# Layout web
+<p>
+    <img src="files/img/web/home.png" width="50%" height="50%" alt="tela de home">
+    <img src="files/img/web/cart.png" width="50%" height="50%" alt="tela de cart">
+    <img src="files/img/web/buy.png" width="50%" height="50%" alt="tela de compra finalizada">
+</p>
 
-In the project directory, you can run:
+# Layout mobile
+<p align="center">
+  <img src="files/img/mobile/home.png" height="340" alt="tela de home mobile" />
+  <img src="files/img/mobile/cart.png" height="340" alt="tela de carrinho mobile" />
+  <img src="files/img/mobile/buy.png" height="340" alt="tela de compra finalizada mobile" />
+</p>
 
-### `yarn start`
+# 🛠 Tecnologias
+As seguintes ferramentas foram usadas na construção do projeto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### front-end
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [axios](https://www.npmjs.com/package/axios)
+- [immer](https://www.npmjs.com/package/immer)
+- [typescript](https://www.typescriptlang.org)
+- [polished](https://www.npmjs.com/package/polished)
+- [framer-motion](https://www.npmjs.com/package/framer-motion)
+- [redux](https://redux.js.org)
+- [redux-saga](https://redux-saga.js.org)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [react-toastify](https://www.npmjs.com/package/react-toastify)
+- [styled-components](https://styled-components.com)
 
-### `yarn test`
+### back-end
+- [json-server](https://github.com/typicode/json-server)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+# Back-End
+O back-end foi construído em usando o json-server seguindo os seguintes caminhos:
+  * /products - lista os produtos cadastrados
+  * /stock - lsita a quantidade de produtos no stock
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 🚀 Como executar o projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Pré-requisitos
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ * [Git](https://git-scm.com)
+ * [Node.js](https://nodejs.org)
+ * [VSCode](https://code.visualstudio.com) ou outro editor de codigos
 
-### `yarn eject`
+## 🧭 Rodando a aplicação
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+# Clone este repositório
+$ git clone https://github.com/Leandro-Goncalves/redux-store
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Acesse a pasta do projeto no seu terminal/cmd
+$ cd redux-store
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Instale as dependências
+$ npm install
+# ou
+$ yarn
 
-## Learn More
+# Execute o json server
+$ yarn server
+# ou
+$ npm run start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Execute a aplicação em modo de desenvolvimento
+$ npm run start
+# ou
+$ yarn start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# A aplicação será aberta na porta:3000 - acesse http://localhost:3000
+```
+---
 
-### Code Splitting
+# Author
+Feito com ❤️ por Leandro Gonçalves [Entre em contato!](mailto:leandrogoncalvesprofissional@hotmail.com)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<a href="https://github.com/Leandro-Goncalves/">
+  <img
+    width="150px"
+    src="https://github.com/Leandro-Goncalves.png"
+    alt=""
+  />
+ <br />
+ <sub><b>Leandro Gonçalves</b></sub></a>
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

@@ -73,10 +73,6 @@ $ npm install
 # ou
 $ yarn
 
-# Execute o json server
-$ yarn server
-# ou
-$ npm run start
 
 # Execute a aplicação em modo de desenvolvimento
 $ npm run start

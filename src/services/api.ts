@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.API_URL,
+  baseURL: "https://my-json-server.typicode.com/Leandro-Goncalves/redux-store",
 })
 
 export default api;
